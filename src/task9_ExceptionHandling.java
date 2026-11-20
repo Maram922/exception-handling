@@ -13,7 +13,7 @@ public class task9_ExceptionHandling {
             }
             System.out.println("Age: " + age);
         } catch (InputMismatchException e) {
-            System.out.println("Error: Please enter numbers only.");
+            System.out.println("Error: Invalid input. Please enter a valid numeric age.");
         }catch (Exception e) {
 
             System.out.println("Error: " + e.getMessage());
