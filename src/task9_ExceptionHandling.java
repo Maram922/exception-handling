@@ -10,7 +10,9 @@ public class task9_ExceptionHandling {
             if (age < 0) {
                 throw new Exception("Age cannot be negative");
             }
+            System.out.println("\n----- Age Details -----");
             System.out.println("Age: " + age);
+            System.out.println("-----------------------");
         } catch (Exception e) {
 
             System.out.println("Error: " + e.getMessage());
