@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class task9_ExceptionHandling {
@@ -11,7 +12,9 @@ public class task9_ExceptionHandling {
                 throw new Exception("Age cannot be negative");
             }
             System.out.println("Age: " + age);
-        } catch (Exception e) {
+        } catch (InputMismatchException e) {
+            System.out.println("Error: Please enter numbers only.");
+        }catch (Exception e) {
 
             System.out.println("Error: " + e.getMessage());
 
