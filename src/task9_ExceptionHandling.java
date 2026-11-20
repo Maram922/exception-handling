@@ -19,7 +19,7 @@ public class task9_ExceptionHandling {
 
         } finally {
 
-            System.out.println("Program ended");
+            System.out.println("Program execution completed successfully.");
             scanner.close();
         }
     }
