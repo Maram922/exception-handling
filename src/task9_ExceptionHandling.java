@@ -6,6 +6,10 @@ public class task9_ExceptionHandling {
         try {
             System.out.print("Enter your age: ");
             int age = scanner.nextInt();
+            
+            if (age > 120) {
+                throw new Exception("Age cannot be greater than 120");
+            }
 
             if (age < 0) {
                 throw new Exception("Age cannot be negative");
