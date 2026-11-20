@@ -11,6 +11,11 @@ public class task9_ExceptionHandling {
                 throw new Exception("Age cannot be negative");
             }
             System.out.println("Age: " + age);
+            if (age < 18) {
+                System.out.println("Category: Child");
+            } else {
+                System.out.println("Category: Adult");
+            }
         } catch (Exception e) {
 
             System.out.println("Error: " + e.getMessage());
