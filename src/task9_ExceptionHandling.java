@@ -6,6 +6,9 @@ public class task9_ExceptionHandling {
         try {
             System.out.print("Enter your name: ");
             String name = scanner.nextLine();
+            if (name.isBlank()) {
+                throw new Exception("Name cannot be empty");
+            }
             System.out.println("Hello, " + name);
             System.out.print("Enter your age: ");
             int age = scanner.nextInt();
