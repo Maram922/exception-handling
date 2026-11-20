@@ -13,8 +13,10 @@ public class task9_ExceptionHandling {
             System.out.println("Age: " + age);
             if (age < 18) {
                 System.out.println("Category: Child");
-            } else {
+            } else if (age < 60) {
                 System.out.println("Category: Adult");
+            } else {
+                System.out.println("Category: Senior Citizen");
             }
         } catch (Exception e) {
 
